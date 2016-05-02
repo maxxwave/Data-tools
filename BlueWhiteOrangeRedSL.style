@@ -1,0 +1,65 @@
+#!/bin/bash
+# Website URL
+#http://www.ncl.ucar.edu/Document/Graphics/ColorTables/BlueWhiteOrangeRed.shtml
+
+# RGB
+#27   44   98
+#36   89  167
+#87  164  216
+#157  218  247
+#215  239  249
+#255  255  255
+#255  255  255
+#252  235  155
+#254  176   50
+#245  106   41
+#211   31   40
+#146   21   25
+
+#1B2C62
+#2459A7
+#57A4D8
+#9DDAF7
+#D7EFF9
+#FFFFFF
+#FFFFFF
+#FCEB9B
+#FEB032
+#F56A29
+#D31F28
+#921519
+
+
+
+# General Palette
+set palette defined ( 0 '#1B2C62',\
+                      1 '#2459A7',\
+                      2 '#57A4D8',\
+                      3 '#9DDAF7',\
+                      4 '#D7EFF9',\
+                      5 '#FFFFFF',\
+                      6 '#FFFFFF',\
+                      7 '#FCEB9B',\
+                      8 '#FEB032',\
+                      9 '#F56A29',\
+                     10 '#D31F28',\
+                     11 '#921519')
+
+# Reset for 3D/map plots
+unset colorbox
+
+set style line 1 pt 7 ps 1.2 lt 1 lc palette fraction 0.1 lw 5
+set style line 2 pt 9 ps 1.6 lt 1 lc palette fraction 0.9 lw 5
+set style line 3 pt 5 ps 1.2 lt 1 lc palette fraction 0.0 lw 5
+set style line 4 pt 11 ps 1.6 lt 1 lc palette fraction 1.0 lw 5
+set style line 5 pt 13 ps 1.6 lt 1 lc palette fraction 0.2 lw 5
+set style line 6 pt 15 ps 1.6 lt 1 lc palette fraction 0.8 lw 5
+set style line 7 pt 9 ps 1.6 lt 1 lc palette fraction 0.3 lw 5
+set style line 8 pt 11 ps 1.6 lt 1 lc palette fraction 0.7 lw 5
+
+#palette fraction 0.98 lw 5.000
+
+#Set additional styles for dashed/dotted lines
+set style line 100 pt 1 ps 1.2 lt 0 lc rgb "gray30" lw 5
+set style line 101 pt 9 ps 1.4 lt 5 lc rgb "black" lw 5
+

@@ -1,0 +1,33 @@
+#!/bin/bash
+# General Palette
+set palette defined ( 0 '#000090',\
+                      1 '#000fff',\
+                      2 '#0090ff',\
+                      3 '#0fffee',\
+                      4 '#90ff70',\
+                      5 '#ffee00',\
+                      6 '#ff7000',\
+                      7 '#ee0000',\
+                      8 '#7f0000')
+
+# Reset for 3D/map plots
+unset colorbox
+
+set style line 1  linetype 1 linecolor palette fraction 0.0 linewidth 5.000 pointtype 7 pointsize 1.2 pointinterval 0
+set style line 2  linetype 1 linecolor palette fraction 0.1 linewidth 5.000 pointtype 5 pointsize 1.2 pointinterval 0
+set style line 3  linetype 1 linecolor palette fraction 0.2 linewidth 5.000 pointtype 9 pointsize 1.6 pointinterval 0
+set style line 4  linetype 1 linecolor palette fraction 0.3 linewidth 5.000 pointtype 13 pointsize 1.6 pointinterval 0
+set style line 5  linetype 1 linecolor palette fraction 0.4 linewidth 5.000 pointtype 7 pointsize 1.2 pointinterval 0
+set style line 6  linetype 1 linecolor palette fraction 0.6 linewidth 5.000 pointtype 7 pointsize 1.2 pointinterval 0
+set style line 7  linetype 1 linecolor palette fraction 0.7 linewidth 5.000 pointtype 15 pointsize 1.6 pointinterval 0
+set style line 8  linetype 1 linecolor palette fraction 0.8 linewidth 5.000 pointtype 11 pointsize 1.6 pointinterval 0
+set style line 9  linetype 1 linecolor palette fraction 0.9 linewidth 5.000 pointtype 7 pointsize 1.2 pointinterval 0
+set style line 10  linetype 1 linecolor palette fraction 1.0 linewidth 5.000 pointtype 7 pointsize 1.2 pointinterval 0
+
+#Optional black line
+set style line 11 pt 9 ps 1.4 lt 5 lc rgb "black" lw 5
+
+#Set additional styles for dashed/dotted lines
+set style line 100 pt 1 ps 1.2 lt 0 lc rgb "gray30" lw 5
+set style line 101 pt 9 ps 1.4 lt 5 lc rgb "black" lw 5
+

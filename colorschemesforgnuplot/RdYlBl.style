@@ -1,0 +1,38 @@
+#!/bin/bash
+# Website URL
+#http://colorschemedesigner.com/#3x222ppo8K-K- 
+# line styles for ColorBrewer RdYlBu
+# for use with divering data
+# provides 8 colors with red low, pale yellow middle, and blue high
+# compatible with gnuplot >=4.2
+# author: Anna Schneider
+
+# General Palette
+# line styles
+set style line 1 pt 7 ps 1.2 lt 1 lc rgb '#D73027' lw 2.5 # red
+set style line 2 pt 9 ps 1.6 lt 1 lc rgb '#F46D43' lw 2.5 # orange
+set style line 3 pt 5 ps 1.2 lt 1 lc rgb '#FDAE61' lw 2.5 # 
+set style line 4 pt 11 ps 1.6 lt 1 lc rgb '#FEE090' lw 2.5 # pale orange
+set style line 5 pt 13 ps 1.6 lt 1 lc rgb '#E0F3F8' lw 2.5 # pale blue
+set style line 6 pt 15 ps 1.6 lt 1 lc rgb '#ABD9E9' lw 2.5 # 
+set style line 7 pt 7 ps 1.2 lt 1 lc rgb '#74ADD1' lw 2.5 # medium blue
+set style line 8 pt 11 ps 1.6 lt 1 lc rgb '#4575B4' lw 2.5 # blue
+
+# palette
+set palette defined ( 0 '#D73027',\
+                      1 '#F46D43',\
+                      2 '#FDAE61',\
+                      3 '#FEE090',\
+                      4 '#E0F3F8',\
+                      5 '#ABD9E9',\
+                      6 '#74ADD1',\
+                      7 '#4575B4' )
+
+
+# Reset for 3D/map plots
+unset colorbox
+
+#Set additional styles for dashed/dotted lines
+set style line 100 pt 1 ps 1.2 lt 0 lc rgb "gray30" lw 5
+set style line 101 pt 9 ps 1.4 lt 5 lc rgb "black" lw 5
+
